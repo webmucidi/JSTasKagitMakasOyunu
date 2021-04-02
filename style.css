@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border: thin solid black;
+    border-radius: 2rem 0 2rem 0;
+    padding: 1rem;
+}
+
+.baslik{
+    color: grey;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Yatra One', cursive;
+    margin: 1rem;
+}
+
+#container > img{
+    flex: 1 1 10rem;
+    max-width: 30%;
+}
+
+button{
+    margin: 1rem;
+}
+
+.basarili{
+    color:rgb(0, 255, 34);
+    font-size: 4rem;
+}
+.basarisiz{
+    color:red;
+    font-size: 4rem;
+}
+.berabere{
+    color:rgb(47, 0, 255);
+    font-size: 4rem;
+}
