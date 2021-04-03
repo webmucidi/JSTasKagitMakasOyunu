@@ -6,7 +6,7 @@ function oyunuBaslat(secim){
     let rastgeleSayi=Math.floor(Math.random()*3);
     let bilgisayarSecimi=["tas","kagit","makas"][rastgeleSayi];
     console.log(bilgisayarSecimi);
-    //Puanlamaları dizi şeklinde değişkene aktaralım
+    //Puanlamaları kaydetmek için object(nesne) tipinde tanımlamaları yapalım
     let oyunPuanlamalari={
         "tas":{"makas":1,"tas":0.5,"kagit":0},
         "kagit":{"tas":1,"kagit":0.5,"makas":0},
@@ -17,7 +17,7 @@ function oyunuBaslat(secim){
     let kullaniciPuani=oyunPuanlamalari[kullaniciSecimi][bilgisayarSecimi];
     console.log(kullaniciPuani);
 
-    //Kayıtlı tüm resimlerin kaynak adreslerini alalım
+    //Kayıtlı tüm resimlerin kaynak adreslerini yine object tanımıyla alalım
     let kayitliResimler={
         "tas":document.getElementById("tas").src,
         "kagit":document.getElementById("kagit").src,
